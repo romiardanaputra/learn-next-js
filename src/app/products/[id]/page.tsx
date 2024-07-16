@@ -1,11 +1,17 @@
-import { NextPage } from 'next'
+import { NextPage } from "next";
 
-interface Props {}
-
-const Page: NextPage<Props> = ({}) => {
-  return <div>
-    product id 1
-  </div>
+interface Props {
+  params: {
+    id: string;
+  };
 }
 
-export default Page
+const ProductDetail: NextPage<Props> = ({ params }) => {
+  return (
+    <div>
+      <h1>Product Detail{params.id}</h1>
+    </div>
+  );
+};
+
+export default ProductDetail;
