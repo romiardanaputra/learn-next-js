@@ -2,14 +2,14 @@ import { NextPage } from "next";
 
 interface Props {
   params: {
-    id: string;
+    productId: string;
   };
 }
 
 const ProductDetail: NextPage<Props> = ({ params }) => {
   return (
     <div>
-      <h1>Product Detail{params.id}</h1>
+      <h1>Product Detail {params.productId}</h1>
     </div>
   );
 };
