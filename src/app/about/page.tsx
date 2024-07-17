@@ -1,5 +1,7 @@
 import { NextPage } from "next";
-
+export const metadata={
+  title:"About",
+}
 interface Props {}
 
 const Page: NextPage<Props> = ({}) => {
