@@ -1,9 +1,19 @@
+"use client"
 import { NextPage } from "next";
 import Link from "next/link";
 
 interface Props {}
 
+const getRandomValue = (count: number) => {
+  return Math.floor(Math.random() * count);
+};
+
 const Products: NextPage<Props> = ({}) => {
+  // const random = getRandomValue(2);
+  // if(random === 1){
+  //   throw new Error("Error ini muncul dari root page products");
+  // }
+
   const productId = 500;
   return (
     <div>
