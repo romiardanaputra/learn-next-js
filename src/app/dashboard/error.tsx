@@ -8,7 +8,7 @@ interface Props {
 const DashboardError: NextPage<Props> = ({ error }) => {
   return (
     <div>
-      <h1>{error.message}</h1>
+      <h1>{error.message}error in dashboard</h1>
     </div>
   );
 };
